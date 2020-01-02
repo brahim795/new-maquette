@@ -1,0 +1,111 @@
+body{
+      
+ background-color: #dad9d98c!important;
+}
+
+
+.container{
+      text-align: center;
+      height: 100vh;
+      
+ background-color: #ffffff;
+}
+  .rate {
+      float: left;
+      height: 46px;
+      padding: 0 10px;
+      width: 100%;
+      text-align: center;
+  }
+  .rate:not(:checked) > input {
+      position:absolute;
+      top:-9999px;
+  }
+  .rate:not(:checked) > label {
+      float:right;
+      width:1em;
+      overflow:hidden;
+      white-space:nowrap;
+      cursor:pointer;
+      font-size:30px;
+      color:#ccc;
+  }
+  .rate:not(:checked) > label:before {
+      content: '★ ';
+  }
+  .rate > input:checked ~ label {
+      color: #ffc700;    
+  }
+  .rate:not(:checked) > label:hover,
+  .rate:not(:checked) > label:hover ~ label {
+      color: #deb217;  
+  }
+  .rate > input:checked + label:hover,
+  .rate > input:checked + label:hover ~ label,
+  .rate > input:checked ~ label:hover,
+  .rate > input:checked ~ label:hover ~ label,
+  .rate > label:hover ~ input:checked ~ label {
+      color: #c59b08;
+  }
+  /* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
+  td{
+        border:0px;
+        text-align: center;
+        margin: 5px!important;
+  }
+
+ input#id-date{
+  background-color:hsla(204, 93%, 29%, 0.549);
+    border: 0;
+    text-align: center;
+    width: 60%;
+}
+input#id-nom, input#id-titre, input#id-type{
+
+      background-color: #dad9d98c!important;
+    border: 0;
+    margin: 5px!important;
+}
+input#id-type{
+      width: 70%;
+}
+
+
+
+
+input {
+	outline: none;
+}
+input[type=search] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; 
+}
+
+
+input[type=search] {
+	background: #ededed url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 0px 10px 0px 32px;
+	width: 250px;
+	
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+	
+	
+}
+
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
